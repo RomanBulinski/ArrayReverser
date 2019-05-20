@@ -14,23 +14,13 @@ public class TestMain {
         assertArrayEquals( outputData , n.reverse(inputData) );
     }
 
+    @Test
+    public void test2(){
+        Main n = new Main();
+        String[] inputData = {"How", "many", "shrimp", "do", "you", "have", "to", "eat","before", "your", "skin", "starts", "to", "turn", "pink?"};
+        String[] outputData = { "?kn", "ipnr", "utotst", "ra", "tsn", "iksr", "uo", "yer", "ofebta", "eote", "vahu", "oyodpm", "ir", "hsyn", "amwoH" };
+        assertArrayEquals( outputData , n.reverse(inputData) );
+    }
 
-
-
-//    @Test
-//    public void FixedTest1()
-//    {
-//        assertEquals(new String[]{"!", "eilt", "onn", "acIdn", "ast", "t", "ubgibe", "kilI"},
-//                ArrayReverser.reverse(new String[]{"I", "like", "big", "butts", "and", "I", "cannot", "lie!"}));
-//    }
-//
-//    @Test public void FixedTest2()
-//    {
-//        assertEquals(new String[]
-//                        {"How", "many", "shrimp", "do", "you", "have", "to", "eat",
-//                                "before", "your", "skin", "starts", "to", "turn", "pink?"},
-//                ArrayReverser.reverse(new String[]{"?kn", "ipnr", "utotst", "ra", "tsn", "iksr", "uo", "yer", "ofebta", "eote", "vahu", "oyodpm", "ir", "hsyn", "amwoH"}));
-//    }
-
-
+    
 }
