@@ -7,7 +7,7 @@ public class Main {
 
     static String[] wordsData = {"I", "like", "big", "butts", "and", "I", "cannot", "lie!"};
 
-    public static String[] reverse( String[] words ){
+    public String[] reverse( String[] words ){
 
         String[] result = new String[words.length];
         String oneWord = Arrays.stream(words).collect(joining());
@@ -27,7 +27,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String[] res = reverse(wordsData);
+
+        Main n = new Main();
+
+        String[] res = n.reverse(wordsData);
         for( int u = 0 ; u<res.length; u++ ){
             System.out.println( res[u]   );
         }

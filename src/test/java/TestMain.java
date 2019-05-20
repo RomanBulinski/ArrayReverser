@@ -1,6 +1,20 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+
 public class TestMain {
+
+
+    @Test
+    public void test1(){
+        Main n = new Main();
+        String[] inputData = {"I", "like", "big", "butts", "and", "I", "cannot", "lie!"};
+        String[] outputData = {  "!", "eilt", "onn", "acIdn", "ast", "t", "ubgibe", "kilI" };
+        assertArrayEquals( outputData , n.reverse(inputData) );
+    }
+
+
 
 
 //    @Test
